@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar class="toolbar-md-primary">
-        <ion-title>TodoList</ion-title>
+        <ion-title>Projects</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="content">
@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     addTodo(){
-      this.$router.push({path: '/todos/add'})
+      this.$router.push({path: '/project/add'})
     }
   },
   created(){
@@ -46,6 +46,13 @@ export default {
   position: fixed;
   bottom: 25px;
   right: 15px;
+  font-size: 30px;
+}
+
+.todo-fab-left{
+  position: fixed;
+  bottom: 25px;
+  left: 15px;
   font-size: 30px;
 }
 
